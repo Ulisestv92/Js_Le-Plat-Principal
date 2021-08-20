@@ -48,11 +48,10 @@ function guardarUsuarios () {
 function imprimirUsuarios () {
     let imprimir = JSON.parse(localStorage.getItem("usuarios"))
     console.log(imprimir)
+    guardarUsuarios ()
     alert("Gracias por completar el formulario")
 
 }
-
-imprimirUsuarios();
 
 let botonEnviar = document.getElementById("enviar");
 botonEnviar.addEventListener("click", imprimirUsuarios);
@@ -62,7 +61,6 @@ function movMouse () {
     console.log("movimiento del mouse")
 }
 
-let botonEnviar = document.getElementById("enviar");
 botonEnviar.addEventListener("mouseover", movMouse);
 
 

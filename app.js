@@ -4,6 +4,7 @@ const listadoProductos = [
     nombre: "Guiso de lentejas",
     precio: 350,
     tipo: "plato",
+    img: "foodpics/lentil_stew.jpeg",
   },
   {
     id: 2,
@@ -94,7 +95,7 @@ function guardarLocal() {
 // const Conserva2 = new Producto("Ajos confitados", 5, "conserva", 330);
 // const Conserva3 = new Producto("Berenjenas al escabeche", 6, "conserva", 375);
 
-// let Productos = [];
+
 
 // Productos.push(Comida1);
 // Productos.push(Comida2);
@@ -117,12 +118,12 @@ function guardarLocal() {
 
 // console.log(Comidas.sort(Comida => Comida.tipo));
 
-function filtrarProductosPorTipo(tipoProductoElegido) {
-  let productosFiltrados = Productos.filter(
-    (producto) => producto.tipo == tipoProductoElegido
-  );
-  return productosFiltrados;
-}
+// function filtrarProductosPorTipo(tipoProductoElegido) {
+//   let productosFiltrados = Productos.filter(
+//     (producto) => producto.tipo == tipoProductoElegido
+//   );
+//   return productosFiltrados;
+// }
 
 function mostrarProducto(eleccion) {
   for (let Producto of Productos) {
@@ -222,7 +223,8 @@ alert(
 
 
 */
-
+let productos = [];
+localStorage.setItem("productos",JSON.stringify(productos));
 const botonesDeComprar = $(".add-to-cart");
 
 botonesDeComprar.click(function (event) {
@@ -230,22 +232,27 @@ botonesDeComprar.click(function (event) {
 
   const elementId = $(event.target).parents(".card")[0].id;
 
-  for (let i = 0; i < listadoProductos.length; i++) {
-    if (listadoProductos[i].id === Number(elementId)) {
-      console.log("aca es donde tengo que agregar al local storage :)");
-      console.log(listadoProductos[i]);
+      let prod =  listadoProductos.filter((elem)=> elem.id == elementId)[0]
+      
+      console.log(prod);
 
       let productosAgregados = JSON.parse(localStorage.getItem("productos"));
+      
 
-      if (productosAgregados) {
-        productosAgregados.push(listadoProductos[i]);
-      } else {
-        productosAgregados = [listadoProductos[i]];
-      }
+      // if (productosAgregados) {
+      //   productosAgregados.push(listadoProductos[i]);
+      // } else {
+      //   productosAgregados = [listadoProductos[i]];
+      // }
+      productosAgregados.push(prod)
+
+  
 
       localStorage.setItem("productos", JSON.stringify(productosAgregados));
-    }
-  }
+    
+  
 });
 
 console.log(botonesDeComprar);
+
+

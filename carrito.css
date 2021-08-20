@@ -211,11 +211,8 @@ font-weight: bold;
 font-size: 40px;
 text-align: center;
 background-color: #EAE9E5;
-transition-duration: 2s;
-transition-property: transform;
-transition-timing-function: ease-in;
-transition-delay: 1s;
-margin-bottom: 10px;
+text-transform: uppercase;
+margin-bottom: 30px;
 
 }
 

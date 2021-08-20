@@ -3,13 +3,14 @@ function renderizarProductos() {
 
   console.log(productos);
 
-  var contenedor = $("#productos ul")[0];
+  var contenedor = $("#productos")[0];
 
   for (let i = 0; i < productos.length; i++) {
     const producto = $("<div>").prop({
       className: "card",
     });
-
+    console.log(productos[0].nombre)
+    console.log(productos)
     const nombre = $("<h3>").prop({
       innerHTML: productos[i].nombre,
       className: "card-title",
@@ -25,9 +26,16 @@ function renderizarProductos() {
       className: "card-price",
     });
 
+    const img = $("<img>")
+    img.attr("src", productos[i].img)
+    
+
+
+
     nombre.appendTo(producto);
     tipo.appendTo(producto);
     precio.appendTo(producto);
+    img.appendTo(producto);
 
     producto.appendTo(contenedor);
   }
@@ -35,8 +43,32 @@ function renderizarProductos() {
 
 renderizarProductos();
 
+ function removerItems (){
+  let arrayVacio=[]
+
+  console.log("entre al remover items")
+localStorage.setItem("productos", JSON.stringify(arrayVacio))
+var contenedor = $("#productos").html('')
 
 
+}
+
+$("#btn1").click(removerItems) 
+
+function sumaTotal(){
+
+  const productos = JSON.parse(localStorage.getItem("productos"));
+
+  let suma = productos.reduce((acc,elem)=>{
+    return acc + Number(elem.precio)
+  },0)
+  
+  return suma
+}
+
+let newA = document.createElement("a")
+newA.textContent = `La suma es ${sumaTotal()}`
+$("#mostrarSuma")[0].appendChild(newA)
 
 function evento1 (){
   $("div").animate({
