@@ -1,0 +1,45 @@
+$Paragraph_color: #5F463A;
+$Header_color: #A32D2A;
+
+
+#body {
+	background-color: #EAE9E5;
+	font-family: Josefin Sans;
+	box-sizing: border-box;
+	min-height: 400px;
+	margin: 20px;
+	padding: 20px;
+
+}
+
+.menu {
+   ul {
+
+
+   }
+   		li {
+
+   			
+   		}
+
+}
+
+
+div {
+	color: red;
+
+	p {
+		color: $Paragraph_color;
+		text-align: center;
+	}
+
+	h1 {
+		color: $Header_color;
+		text-align:center;
+
+	}
+
+
+}
+
+

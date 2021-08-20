@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le Plat Principal</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="bootstrap/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <meta
+      name="keywords"
+      content="recetas, comida, viandas, dips, conservas, carne, vegetariano, cocina, sandwich, antipasto, plato, cocina"
+    />
+
+    <meta
+      name="description"
+      content="Disfrute de nuestras comidas. Inspírate con nuestras recetas. Deleita a tus amigos en tus reuniones!"
+    />
+  </head>
+
+  <body id="body">
+    <header>
+      <nav class="navbar">
+        <div class="nav_logo">
+          <a class="header__link" href="index.html">
+            <img
+              class="nav_img"
+              src="foodpics/logo.png"
+              title="Le Plat Principal"
+              alt="Le PLat Principal"
+              width="260"
+            />
+          </a>
+        </div>
+
+        <ul class="nav navbar-dark justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="recipes.html">Recetas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="our_kitchen.html">Nuestra cocina</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="connect_with_us.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="carrito.html">Carrito</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="section">
+      <div>
+        <h1 class="section__header1">Disfruta la vida, es deliciosa</h1>
+
+        <p class="paragraph3">
+          La comida une a las personas y cocinar en casa es una excelente manera
+          de unir a su familia en la mesa del comedor. A todo el mundo le
+          encanta una comida casera, incluso los adolescentes de mal humor o los
+          melindrosos. Y si vive solo, eso no significa que tenga que cocinar o
+          comer solo. Compartir comidas con otros es una excelente manera de
+          expandir su red social. Recibir comentarios de agradecimiento sobre
+          una comida que ha preparado para alguien también puede impulsar su
+          autoestima.
+        </p>
+
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="foodpics/Top_banner.jpeg"
+                class="d-block w-100"
+                alt="Get inspired"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="foodpics/ribeye.jpeg"
+                class="d-block w-100"
+                alt="Products"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="foodpics/kafta.jpeg"
+                class="d-block w-100"
+                alt="Recipes"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+   
+
+    <section class="section">
+      <h1 id="header1" class="section__header1">Productos</h1>
+
+      <h2 id="header2" class="section__header2">Conservas</h2>
+
+      <div class="row align-items-start justify-content-center">
+        <div class="col-lg-4">
+          <div id="4" class="card h-100 card text-center">
+            <img
+              class="card-img-top"
+              src="foodpics/pickled_cucumber1.jpeg"
+              alt="Pepinos agridulces"
+              title="Pepinos agridulces"
+            />
+
+            <div class="card-body">
+              <h3 class="card-title">Pepinos agridulces</h3>
+              <p class="card-text">
+                Un pepino en escabeche es un pepino que se ha encurtido en
+                salmuera, vinagre u otra solución y se ha dejado fermentar
+                durante un período de tiempo, ya sea sumergiendo los pepinos en
+                una solución ácida o agriándolo por lacto-fermentación.
+              </p>
+              <a class="btn btn-secondary add-to-cart">+ Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div id="5" class="card h-100 card text-center">
+            <img
+              class="card-img-top"
+              src="foodpics/garlic_confit3.jpeg"
+              alt="Ajos confitados"
+              title="Ajos confitados"
+            />
+
+            <div class="card-body">
+              <h3 class="card-title">Ajos confitados</h3>
+              <p class="card-text">
+                Un frasco de ajo confitado es un excelente alimento básico para
+                tener en la heladera. Perfecto para mezclar con salsas, aderezos
+                o una simple salsa para pasta, nuestros favoritos incluyen
+                hummus extra-ajo y un pesto de ajo untuoso.
+              </p>
+              <a class="btn btn-secondary add-to-cart">+ Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div id="6" class="card h-100 card text-center">
+            <img
+              class="card-img-top"
+              src="foodpics/eggplant_1.jpeg"
+              alt="Berenjenas al escabeche"
+              title="Berenjenas al escabeche"
+            />
+
+            <div class="card-body">
+              <h3 class="card-title">Berenjenas al escabeche</h3>
+              <p class="card-text">
+                Las berenjenas en escabeche son un antipasto típico italiano.
+                Son perfectos junto con salame, queso y aceitunas, pero también
+                son fabulosos en un sándwich.
+              </p>
+              <a class="btn btn-secondary add-to-cart">+ Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="recipe_month">
+      <div class="card-recipe card mb-3">
+        <div class="row g-0">
+          <div class="col-md-8">
+            <img
+              class="card-img-top"
+              src="foodpics/polenta.jpg"
+              alt="Polenta con albóndigas"
+            />
+          </div>
+          <div class="col-md-4">
+            <div class="card-body">
+              <!--  <h2 class="card-title">Recipe of the month</h2> -->
+              <h2 class="card-title">Polenta con albóndigas</h2>
+              <p class="paragraph_card">
+                Este es el plato adecuado para un día frío. El otoño ya ha
+                comenzado y el invierno aún está por llegar. La polenta es
+                básicamente harina de maíz, súper fácil de cocinar y aromatizar.
+                No te puedes perder mucho queso fresco y parmesano. Una salsa
+                simple de tomates frescos rallados, ajo picado, hojas de laurel
+                y olla de cocción lenta. ¿Las albóndigas? Son opcionales, ¡pero
+                son realmente increíbles! El secreto de esta receta: Agrega la
+                misma cantidad de leche y agua para cocinar la polenta. De esta
+                forma obtendremos un resultado más cremoso.
+              </p>
+              <p class="paragraph_card_bottom">Receta del mes!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section__header2">Comidas</h2>
+      <div class="row">
+        <div class="col-lg-4">
+          <div id="1" class="card h-100 card text-center">
+            <img
+              class="card-img-top"
+              src="foodpics/lentil_stew.jpeg"
+              alt="Guiso de lentejas"
+              title="Guiso de lentejas"
+            />
+
+            <div class="card-body">
+              <h3 class="card-title">Guiso de lentejas</h3>
+              <p class="card-text">
+                La sopa de lentejas es una sopa a base de lentejas; puede ser
+                vegetariano o incluir carne, y puede usar lentejas marrones,
+                rojas, amarillas o negras, con o sin cáscara. Las lentejas
+                amarillas y rojas descascaradas se desintegran al cocinarse,
+                formando una sopa espesa. Es un alimento básico en toda Europa,
+                América Latina y Oriente Medio.
+              </p>
+              <a class="btn btn-secondary add-to-cart">+ Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div id="2" class="card h-100 card text-center">
+            <img
+              class="card-img-top"
+              src="foodpics/paella.jpg"
+              alt="Paella"
+              title="Paella"
+            />
+
+            <div class="card-body">
+              <h3 class="card-title">Paella</h3>
+              <p class="card-text">
+                La paella es un plato de arroz español originario de Valencia.
+                La paella es uno de los platos más conocidos de la cocina
+                española. Por este motivo, muchos no españoles lo ven como el
+                plato nacional de España, pero los españoles casi unánimemente
+                lo consideran un plato de la región valenciana.
+              </p>
+              <a class="btn btn-secondary add-to-cart">+ Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div id="3" class="card h-100 card text-center">
+            <img
+              class="card-img-top"
+              src="foodpics/thinskirt_rice.jpg"
+              alt="Entraña con arroz indio"
+              title="Entraña con arroz indio"
+            />
+
+            <div class="card-body">
+              <h3 class="card-title">Entraña con arroz indio</h3>
+              <p class="card-text">
+                Este plato es un clásico de la comida india si se come con
+                cordero. Usar este corte de carne bien condimentado le da un
+                toque de sabor.
+              </p>
+              <a class="btn btn-secondary add-to-cart">+ Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h1 id="header1" class="section__header1">Recetas</h1>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card h-100 card text-center">
+            <img
+              class="card-img-top"
+              src="foodpics/mushroom_risotto.jpeg"
+              alt="Risotto de hongos"
+              title="Risotto de hongos"
+            />
+
+            <div class="card-body">
+              <h3 class="card-title">Risotto de hongos</h3>
+              <p class="card-text">
+                El risotto con funghi se hace con arroz arborio que se cuece a
+                fuego lento con champiñones blancos, prosecco, caldo de pollo,
+                cebolla y queso parmesano, hasta que el arroz esté tierno al
+                picar. ¡Risotto con Funghi es una comida deliciosa y rica en
+                proteínas que le encantará a su familia!
+              </p>
+              <a class="btn btn-secondary add-to-cart">+ Info</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card h-100 card text-center">
+            <img
+              class="card-img-top"
+              src="foodpics/tapenade_2.jpeg"
+              alt="Tapenade"
+              title="Tapenade"
+            />
+
+            <div class="card-body">
+              <h3 class="card-title">Tapenade</h3>
+              <p class="card-text">
+                Tapenade es un nombre provenzal de un ingrediente para untar,
+                condimento e ingrediente culinario que consiste en aceitunas,
+                alcaparras y anchoas en puré o finamente picadas. Su nombre
+                proviene de la palabra provenzal para alcaparras, tapenas
+              </p>
+              <a class="btn btn-secondary add-to-cart">+ Info</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card h-100 card text-center">
+            <img
+              class="card-img-top"
+              src="foodpics/chicken_nola.png"
+              alt="Sandwich de pollo frito"
+              title="Sandwich de pollo frito"
+            />
+
+            <div class="card-body">
+              <h3 class="card-title">Sandwich de pollo frito</h3>
+              <p class="card-text">
+                El pollo frito sureño, también conocido simplemente como pollo
+                frito, es un plato que consiste en trozos de pollo que se han
+                cubierto con harina sazonada o rebozado y se fríen en sartén,
+                fritos, fritos a presión o al aire. El empanizado agrega una
+                capa o corteza crujiente al exterior del pollo mientras retiene
+                los jugos en la carne. Los pollos de engorde son los más
+                utilizados
+              </p>
+              <a class="btn btn-secondary add-to-cart">+ Info</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="get_inspired">
+      <div class="card_inspired" class="card text-center">
+        <!-- <div class="card-header">
+    You definitely need to see this!
+  </div> -->
+        <div class="card-body">
+          <h2 class="card-title">Inspirate...</h2>
+          <p class="card-text">
+            A veces es difícil dar el primer paso en la cocina, aquí encontrarás
+            motivación..
+          </p>
+          <a class="btn btn-secondary add-to-cart">+ Info</a>
+        </div>
+        <!-- <div class="card-footer text-muted">
+    2 days ago
+  </div> -->
+      </div>
+    </section>
+
+    <footer id="footer" class="table-responsive-lg footer">
+      <div class="table footer__logo_footer">
+        <a href="index.html">
+          <img
+            href
+            class="footer__img"
+            src="foodpics/logo.png"
+            title="Le Plat Principal"
+            alt="Le PLat Principal"
+            width="210"
+          />
+        </a>
+        <ul class="footer__list">
+          <li class="footer_item">
+            <p class="footer__paragraph">Terminos & Condiciones</p>
+          </li>
+          <li class="footer_item">
+            <p class="footer__paragraph">Política de privacidad</p>
+          </li>
+          <li class="footer_item">
+            <p class="footer__paragraph5">&copy; Le Plat Principal 2021</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="table newsletter">
+        <h2>Newsletter</h2>
+        <p class="paragraph">
+          Obtenga acceso privilegiado a noticias sobre las innovaciones,
+        </p>
+        <p class="paragraph">
+          técnicas de cocina únicas, conceptos culinarios, conocimientos y más.
+        </p>
+
+        <p class="paragraph4">SUSCRÍBETE AHORA!</p>
+        <input class="form-control" type="email" placeholder="Email" />
+        <a href="connect_with_us.html" class="btn btn-dark">Enviar </a>
+      </div>
+
+      <div class="table social_media">
+        <h2>Redes Sociales</h2>
+
+        <ul class="list_media">
+          <li class="list_media_item">
+            <a href="https://www.facebook.com/utvidal/">Facebook </a>
+          </li>
+          <li class="list_media_item">
+            <a href="https://www.instagram.com/gordochimi/">Instagram </a>
+          </li>
+          <li class="list_media_item">
+            <a href="https://www.youtube.com/channel/UCCYTyOmGKzIXPlOuF00X1qw"
+              >Youtube
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
