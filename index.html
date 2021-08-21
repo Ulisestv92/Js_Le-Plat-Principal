@@ -48,9 +48,6 @@
 
         <ul class="nav navbar-dark justify-content-end">
           <li class="nav-item">
-            <a class="nav-link" href="products.html">Productos</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="recipes.html">Recetas</a>
           </li>
           <li class="nav-item">
@@ -228,38 +225,7 @@
       </div>
     </section>
 
-    <section class="recipe_month">
-      <div class="card-recipe card mb-3">
-        <div class="row g-0">
-          <div class="col-md-8">
-            <img
-              class="card-img-top"
-              src="foodpics/polenta.jpg"
-              alt="Polenta con albóndigas"
-            />
-          </div>
-          <div class="col-md-4">
-            <div class="card-body">
-              <!--  <h2 class="card-title">Recipe of the month</h2> -->
-              <h2 class="card-title">Polenta con albóndigas</h2>
-              <p class="paragraph_card">
-                Este es el plato adecuado para un día frío. El otoño ya ha
-                comenzado y el invierno aún está por llegar. La polenta es
-                básicamente harina de maíz, súper fácil de cocinar y aromatizar.
-                No te puedes perder mucho queso fresco y parmesano. Una salsa
-                simple de tomates frescos rallados, ajo picado, hojas de laurel
-                y olla de cocción lenta. ¿Las albóndigas? Son opcionales, ¡pero
-                son realmente increíbles! El secreto de esta receta: Agrega la
-                misma cantidad de leche y agua para cocinar la polenta. De esta
-                forma obtendremos un resultado más cremoso.
-              </p>
-              <p class="paragraph_card_bottom">Receta del mes!</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+   
     <section class="section">
       <h2 class="section__header2">Comidas</h2>
       <div class="row">
@@ -332,6 +298,39 @@
         </div>
       </div>
     </section>
+
+    <section class="recipe_month">
+      <div class="card-recipe card mb-3">
+        <div class="row g-0">
+          <div class="col-md-8">
+            <img
+              class="card-img-top"
+              src="foodpics/polenta.jpg"
+              alt="Polenta con albóndigas"
+            />
+          </div>
+          <div class="col-md-4">
+            <div class="card-body">
+              <!--  <h2 class="card-title">Recipe of the month</h2> -->
+              <h2 class="card-title">Polenta con albóndigas</h2>
+              <p class="paragraph_card">
+                Este es el plato adecuado para un día frío. El otoño ya ha
+                comenzado y el invierno aún está por llegar. La polenta es
+                básicamente harina de maíz, súper fácil de cocinar y aromatizar.
+                No te puedes perder mucho queso fresco y parmesano. Una salsa
+                simple de tomates frescos rallados, ajo picado, hojas de laurel
+                y olla de cocción lenta. ¿Las albóndigas? Son opcionales, ¡pero
+                son realmente increíbles! El secreto de esta receta: Agrega la
+                misma cantidad de leche y agua para cocinar la polenta. De esta
+                forma obtendremos un resultado más cremoso.
+              </p>
+              <p class="paragraph_card_bottom">Receta del mes!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <section class="section">
       <h1 id="header1" class="section__header1">Recetas</h1>
@@ -462,8 +461,9 @@
         </p>
 
         <p class="paragraph4">SUSCRÍBETE AHORA!</p>
-        <input class="form-control" type="email" placeholder="Email" />
-        <a href="connect_with_us.html" class="btn btn-dark">Enviar </a>
+        <input id="email" class="form-control" type="email" placeholder="Email" required />
+        <a  id="enviarNews" class="btn btn-dark">Enviar </a>
+        <h2 id="result"></h2>
       </div>
 
       <div class="table social_media">
@@ -493,5 +493,6 @@
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </body>
 </html>

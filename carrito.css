@@ -10,7 +10,25 @@
 #box {
 	width: 50%;
 	height: 30px;
-	background-color: #5C636B;
+	align-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.img {
+	min-height: 50%;
+	min-height: 50%;
+	align-items: center;
+	align-content: center;
+}
+
+#mostrarSuma {
+	padding-top: 15px;
+	padding-left: 40%;
+	font-size: 35px;
+	align-content: center;
+	align-items: center;
+	font-weight: 90;
 }
 
 
@@ -165,16 +183,15 @@
 
 .card {
   padding-top: 10px;
+  padding-left: 15px;
   margin-top: 1rem;
   border: 1px solid #000;
   margin-bottom: 10px;
-  width: 50%;
-  height: 50%;
-  background-color: #EDC31C;
+  width: 40%;
+  height: 40%;
+  background-color: #F5A530;
   align-items: center;
   align-content: center;
-  max-height: 100%;
-  max-width: 100%;
   margin: auto;
   display: block;
   padding-bottom: 10px;
@@ -184,16 +201,31 @@
 .card-title {
   font-size: 2rem;
   margin-bottom: 15px;
+  align-items: center;
+  align-content: center;
 }
 
 .card-description {
-	font-size: 22px;
+  font-size: 22px;
   margin-bottom: 20px;
+  align-items: center;
+  align-content: center;
 }
 
 .card-price {
   font-size: 24px;
   color: #A22D2A;
+  align-items: center;
+  align-content: center;
+}
+
+
+.card-img-top {
+max-width: 50%;
+max-height: 50%;
+align-items: center;
+align-content: center;
+
 }
 
 
@@ -202,6 +234,7 @@
 	background-color: #EAE9E5;
 
 }
+
 
 
 #header1{
@@ -264,8 +297,8 @@ margin-bottom: 10px;
 }
 
 .card-img-top1 {
-	width: 100%;
-    height: 100%;
+	width: 50%;
+    height: 50%;
     object-fit: cover;
 
 }

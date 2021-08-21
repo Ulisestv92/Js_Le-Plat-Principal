@@ -3,46 +3,47 @@ const listadoProductos = [
     id: 1,
     nombre: "Guiso de lentejas",
     precio: 350,
-    tipo: "plato",
+    tipo: "Plato",
     img: "foodpics/lentil_stew.jpeg",
   },
   {
     id: 2,
     nombre: "Paella",
     precio: 420,
-    tipo: "plato",
+    tipo: "Plato",
+    img: "foodpics/paella.jpg"
   },
   {
     id: 3,
     nombre: "Entraña con arroz Indio",
     precio: 400,
-    tipo: "plato",
+    tipo: "Plato",
+    img: "foodpics/thinskirt_rice.jpg"
   },
   {
     id: 4,
     nombre: "Pepinos agridulces",
     precio: 250,
-    tipo: "conserva",
+    tipo: "Conserva",
+    img: "foodpics/pickled_cucumber1.jpeg",
   },
   {
     id: 5,
     nombre: "Ajos confitados",
     precio: 330,
-    tipo: "conserva",
+    tipo: "Conserva",
+    img: "foodpics/garlic_confit3.jpeg"
   },
   {
     id: 6,
     nombre: "Berenjenas al escabeche",
     precio: 375,
-    tipo: "conserva",
+    tipo: "Conserva",
+    img: "foodpics/eggplant_1.jpeg"
   },
 ];
 
-function saludoCompleto(nombre) {
-  return alert(
-    `Hola ${nombre}, esperamos te tientes con todos nuestros productos!`
-  );
-}
+
 
 // let consultaUsuario = confirm("Es tu primera vez en nuestro sitio web?");
 
@@ -87,43 +88,6 @@ function guardarLocal() {
   localStorage.setItem("productos", aJson);
 }
 
-// const Comida1 = new Producto("Guiso de lentejas", 1, "plato", 350);
-// const Comida2 = new Producto("Paella", 2, "plato", 420);
-// const Comida3 = new Producto("Entraña con arroz Indio", 3, "plato", 400);
-
-// const Conserva1 = new Producto("Pepinos agridulces", 4, "conserva", 250);
-// const Conserva2 = new Producto("Ajos confitados", 5, "conserva", 330);
-// const Conserva3 = new Producto("Berenjenas al escabeche", 6, "conserva", 375);
-
-
-
-// Productos.push(Comida1);
-// Productos.push(Comida2);
-// Productos.push(Comida3);
-// Productos.push(Conserva1);
-// Productos.push(Conserva2);
-// Productos.push(Conserva3);
-
-// console.log(Productos);
-
-// const guardarComidas = ("Comida", Comida) => { localStorage.setItem("Comida", Comida)};
-
-// for (const Comida of Comidas) {
-//     guardarComidas(Comida.id, JSON.stringify(Comidas));
-// }
-
-// console.log(Comidas);
-
-// console.log(Comidas.find(Comida => Comida.id == eleccion));
-
-// console.log(Comidas.sort(Comida => Comida.tipo));
-
-// function filtrarProductosPorTipo(tipoProductoElegido) {
-//   let productosFiltrados = Productos.filter(
-//     (producto) => producto.tipo == tipoProductoElegido
-//   );
-//   return productosFiltrados;
-// }
 
 function mostrarProducto(eleccion) {
   for (let Producto of Productos) {
@@ -161,6 +125,7 @@ console.log(listItem);
 /* llamados de funciones */
 
 window.onload = function () {
+};
   //alert("Bienvenid@ a Le Plat Principal");
   //Pedir y guardar nombre
   /*let nombre = String(
@@ -199,30 +164,9 @@ window.onload = function () {
 
 
 
-
-
-
   ;*/
-};
-
-/*
 
 
-
-console.log(Productos);
-
-
-alert(
-  "Antes de proseguir, nos gustaría contar con tu correo electrónico para poder enviarte novedades y promociones, estas de acuerdo?"
-);
-
-alert(
-  "A continuacion, te mostraremos nuestras opciones de platos y de conservas"
-);
-
-
-
-*/
 let productos = [];
 localStorage.setItem("productos",JSON.stringify(productos));
 const botonesDeComprar = $(".add-to-cart");
@@ -238,15 +182,7 @@ botonesDeComprar.click(function (event) {
 
       let productosAgregados = JSON.parse(localStorage.getItem("productos"));
       
-
-      // if (productosAgregados) {
-      //   productosAgregados.push(listadoProductos[i]);
-      // } else {
-      //   productosAgregados = [listadoProductos[i]];
-      // }
       productosAgregados.push(prod)
-
-  
 
       localStorage.setItem("productos", JSON.stringify(productosAgregados));
     
@@ -256,3 +192,75 @@ botonesDeComprar.click(function (event) {
 console.log(botonesDeComprar);
 
 
+
+// Usuarios newsletter
+
+class Usuario {
+  constructor(email, nombre, direccion, direccion2, ciudad, provincia, cp){
+  this.email = email;
+  this.nombre = nombre;
+  this.direccion = direccion;
+  this.direccion2 = direccion2;
+  this.ciudad = ciudad;
+  this.provincia = provincia;
+  this.cp = cp;
+  }
+
+}
+
+// Array de Usuarios
+
+let usuariosNewsletter = [];
+
+// Selectores 
+
+let btnEnviarNews = document.getElementById("enviarNews");
+
+// GuardarDatos
+
+function guardarUsuarios () {
+  let email = document.getElementById("email").value 
+
+  let usuario = new Usuario(email)
+
+  usuariosNewsletter.push(usuario)
+
+  localStorage.setItem("usuariosNewsletter", JSON.stringify(usuariosNewsletter))
+
+}
+
+
+function imprimirUsuarios () {
+  let imprimir = JSON.parse(localStorage.getItem("usuariosNewsletter"))
+  console.log(imprimir)
+  guardarUsuarios ()
+  alert("Gracias por suscribirte al newsletter!")
+
+}
+
+let botonEnviarNews = document.getElementById("enviarNews");
+botonEnviarNews.addEventListener("click", imprimirUsuarios);
+
+
+
+// function validarEmail(email) {
+//   const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+//   return re.test(email);
+// }
+
+// function validar() {
+//   const $result = $("#result");
+//   const email = $("#email").val();
+//   $result.text("");
+
+//   if (validarEmail(email)) {
+//     $result.text(email + " es valido :)");
+//     $result.css("color", "verde");
+//   } else {
+//     $result.text(email + " no es valido :(");
+//     $result.css("color", "rojo");
+//   }
+//   return false;
+// }
+
+// $("#email").on("input", validar);

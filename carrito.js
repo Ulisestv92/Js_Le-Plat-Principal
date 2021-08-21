@@ -26,11 +26,16 @@ function renderizarProductos() {
       className: "card-price",
     });
 
-    const img = $("<img>")
-    img.attr("src", productos[i].img)
-    
+    const img = $("<img>").prop({
+      innerHTML: productos[i].img,
+      className: "card-img-top",
+    });
 
-
+    // const img = $("<img>").prop({
+    // img.attr("src", productos[i].img)
+    // className: "card-img-top",
+    //});
+  
 
     nombre.appendTo(producto);
     tipo.appendTo(producto);
@@ -66,9 +71,9 @@ function sumaTotal(){
   return suma
 }
 
-let newA = document.createElement("a")
-newA.textContent = `La suma es ${sumaTotal()}`
-$("#mostrarSuma")[0].appendChild(newA)
+let valorTotal = document.createElement("a")
+valorTotal.textContent = `TOTAL $${sumaTotal()}`
+$("#mostrarSuma")[0].appendChild(valorTotal)
 
 function evento1 (){
   $("div").animate({
