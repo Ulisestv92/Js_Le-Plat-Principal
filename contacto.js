@@ -66,34 +66,3 @@ botonEnviar.addEventListener("mouseover", movMouse);
 
 
 
-
-
-    // imprimir.forEach(element => {
-
-
-//     }
-
-//     array.forEach(element => {
-        
-//     });
-// }
-
-
-
-// let miFormulario = document.getElementById("formulario");
-// miFormulario.addEventListener("submit", validarFormulario);
-
-
-// function validarFormulario(e) {
-//     e.preventDefault();
-
-//     let formulario = e.target;
-
-//     console.log(formulario.children[0].value);  //email
-//     console.log(formulario.children[1].value);  //nombre completo
-//     console.log(formulario.children[2].value);  //direccion
-//     console.log(formulario.children[3].value);  //direccion#2
-//     console.log(formulario.children[4].value);  //ciudad
-//     console.log(formulario.children[5].value);  //provincia
-//     console.log(formulario.children[6].value);  //codigo postal 
-

@@ -1,3 +1,5 @@
+// Funciones
+
 function renderizarProductos() {
   const productos = JSON.parse(localStorage.getItem("productos"));
 
@@ -51,7 +53,7 @@ renderizarProductos();
  function removerItems (){
   let arrayVacio=[]
 
-  console.log("entre al remover items")
+
 localStorage.setItem("productos", JSON.stringify(arrayVacio))
 var contenedor = $("#productos").html('')
 
@@ -88,16 +90,4 @@ function evento2 (){
   $("#box").hide()
 }
 
-
 $("#btn1").on("animate", evento1)
-
-// $("#btn2").on("click", evento2)
-
-// $("btn1").click(function(){
-//   $("div").animate({
-//       left: '250px',
-//       opacity: '0.5',
-//       height: '150px',
-//       width: '150px',
-//     });
-//   });
